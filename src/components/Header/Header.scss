@@ -1,0 +1,27 @@
+@import '~styles/main';
+
+.Header {
+    @include clearFix();
+    background-color: color(primary-blue);
+
+    .Header__Nav {
+        float: left;
+        li {
+            display: inline-block;
+            margin-left: 10px;
+
+            a {
+                display: block;
+                padding: 20px 20px;
+                text-decoration: none;
+                color: color(primary-white);
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                    border-bottom: 2px solid color(primary-white);
+                }
+            }
+        }
+
+    }
+}

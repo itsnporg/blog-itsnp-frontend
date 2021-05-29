@@ -1,0 +1,7 @@
+@import '~styles/main';
+
+.HomePage {
+    padding: 50px;
+    height: calc(100vh - 160px); // 60px for the header and 100px for the padding
+    background-color: color(tertiary-grey);
+}

@@ -1,0 +1,33 @@
+@import 'variables';
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+@mixin hover {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin small {
+  @media only screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $xl) {
+    @content;
+  }
+}

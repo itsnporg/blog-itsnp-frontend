@@ -1,0 +1,17 @@
+// colors
+$colors: (
+  primary-blue: #22a5ff,
+  tertiary-grey: #f8f8f8,
+  primary-white: #ffffff,
+);
+
+@function color($color) {
+  @return map_get($colors, $color);
+}
+
+//screen size
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+
+$xl: 1080px;
