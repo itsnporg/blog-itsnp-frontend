@@ -5,9 +5,9 @@ import './Button.scss';
 export const Button = ({ label }) => {
   return (
     <>
-      <div className='button '>
+      <button className='button '>
         <div className='button__label button__label--active'>{label}</div>
-      </div>
+      </button>
     </>
   );
 };
