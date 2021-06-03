@@ -1,0 +1,17 @@
+//All the global setting of this project lies here
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color:color(primary-blue);
+  color: color(tertiary-grey);
+}
