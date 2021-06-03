@@ -1,4 +1,10 @@
-@import 'variables';
+@import "variables";
+
+@mixin clearFix {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 @mixin e($element) {
   &__#{$element} {
