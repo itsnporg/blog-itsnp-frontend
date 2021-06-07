@@ -1,7 +1,7 @@
 @import '~styles/main';
 
 .Header {
-    @include clearFix();
+    
     background-color: color(primary-blue);
 
     .Header__Nav {

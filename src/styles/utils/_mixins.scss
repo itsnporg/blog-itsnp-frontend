@@ -31,3 +31,27 @@
     @content;
   }
 }
+
+
+@mixin flex-item-center($direction){
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:$direction;
+}
+
+@mixin font-heading() {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+@mixin font-semiBold() {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+@mixin font-medium() {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
