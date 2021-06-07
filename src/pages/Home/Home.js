@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import { Button } from 'components/button/Button';
+import "./Home.scss";
+import { ProfileTop, ProfileBottom, ProfileCard } from "../../components/Profile/Profile";
 
-import './Home.scss';
+import avatarImg from "../../Assets/6hk992di5pn61.jpg";
 
-export default props => {
-
-    return(
-        <div className="HomePage">
-            
-        </div>
-    );
-}
+export default (props) => {
+  return (
+    <div className='HomePage'>
+      <ProfileTop authorName='Aleen Xetri' followerNum='2.5' />
+      <ProfileBottom authorName='Aleen Xetri' image={avatarImg} />
+      <ProfileCard authorName='Aleen Xetri' followerNum='1.2' commentsNum='50' />
+    </div>
+  );
+};

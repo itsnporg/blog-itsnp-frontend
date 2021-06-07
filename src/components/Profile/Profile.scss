@@ -1,0 +1,73 @@
+@import "~styles/main";
+
+@mixin title {
+  margin: auto 20px auto 0px;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+@mixin button {
+  // background-color: #000;
+  // border: none;
+  // color: white;
+  // padding: 10px 10px;
+  // text-align: center;
+  // text-decoration: none;
+  // display: inline-block;
+  // font-size: 16px;
+  margin: auto 2px;
+  // border-radius: 5px;
+}
+
+//global styles across all profile elements
+.profile {
+  font-family: Inter;
+  .button {
+    @include button;
+  }
+  .title {
+    @include title;
+  }
+}
+
+.profileTopWrap {
+  margin: 10px 20px;
+  width: 100%;
+  display: flex;
+  align-items: row;
+}
+
+.profileBottomWrap {
+  display: flex;
+  align-items: stretch;
+  .authorInfo {
+    color: color(light);
+  }
+}
+
+.card {
+  width: 210px;
+  .first {
+    display: flex;
+    justify-content: space-between;
+  }
+  .desc {
+    color: color(light);
+  }
+  .iconContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 4px;
+    color: color(light);
+    .heart {
+      display: flex;
+      span {
+        margin-left: 2px;
+      }
+    }
+    .comment {
+      display: flex;
+    }
+  }
+}
