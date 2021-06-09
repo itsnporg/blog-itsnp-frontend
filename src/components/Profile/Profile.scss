@@ -1,33 +1,13 @@
 @import "~styles/main";
 
-@mixin title {
-  margin: auto 20px auto 0px;
-  color: #000;
-  text-transform: capitalize;
-  font-size: 18px;
-}
-
-@mixin button {
-  // background-color: #000;
-  // border: none;
-  // color: white;
-  // padding: 10px 10px;
-  // text-align: center;
-  // text-decoration: none;
-  // display: inline-block;
-  // font-size: 16px;
-  margin: auto 2px;
-  // border-radius: 5px;
-}
-
 //global styles across all profile elements
 .profile {
   font-family: Inter;
   .button {
-    @include button;
+    margin: auto 2px;
   }
-  .title {
-    @include title;
+  .profile__title {
+    @include profile__title;
   }
 }
 
@@ -42,18 +22,18 @@
   display: flex;
   align-items: stretch;
   .authorInfo {
-    color: color(light);
+    color: color(text-light);
   }
 }
 
 .card {
-  width: 210px;
+  width: 100%;
   .first {
     display: flex;
     justify-content: space-between;
   }
   .desc {
-    color: color(light);
+    color: color(text-light);
   }
   .iconContainer {
     display: flex;

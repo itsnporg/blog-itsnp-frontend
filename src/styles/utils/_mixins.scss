@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 @mixin e($element) {
   &__#{$element} {
@@ -35,5 +35,23 @@
 @mixin tablet {
   @media only screen and (max-width: $xl) {
     @content;
+  }
+}
+
+@mixin profile__title {
+  margin: auto 20px auto 0px;
+  color: color(pure-black);
+  text-transform: capitalize;
+  font-size: 1.125rem;
+}
+
+@mixin avatar($size, $border) {
+  border-radius: 50%;
+  margin: 0px 0px;
+  height: $size;
+  width: $size;
+
+  @if $border {
+    border: 2px dashed black;
   }
 }
