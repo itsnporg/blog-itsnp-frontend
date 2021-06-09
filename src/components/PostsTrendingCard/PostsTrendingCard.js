@@ -1,8 +1,9 @@
-import { allImage } from "../../constants";
 import React from "react";
+
+import { allImage } from "../../constants";
 import "./PostsTrendingCard.scss";
 
-const PostsTrendingCard = () => {
+const PostsTrendingCard = ({heading, content}) => {
   return (
     <div className="postsTrendingCard">
       <div>
@@ -14,10 +15,9 @@ const PostsTrendingCard = () => {
       </div>
 
       <div className="postsTrendingCard__content">
-        <h1>How momo helps to think like bill gates</h1>
+        <h1>{heading}</h1>
         <h3>
-          I used to have 5 plates momo per day, Which helps me to build
-          microsoft. Bill Gates says “Momo helped me to I see the ......
+          {content}
           <span>Read More</span>
         </h3>
       </div>
