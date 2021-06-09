@@ -1,0 +1,39 @@
+@import "~styles/main";
+
+.comment {
+  margin: 20px auto;
+  width: 70%;
+  // color: lighten(color(pure-black), 40%);
+
+  .avatar {
+    position: fixed;
+    // padding: -80px;
+    margin: 0px -60px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    // background-color: red;
+    comment__author {
+      display: inline-block;
+    }
+    em {
+      display: block;
+      color: lighten(color(pure-black), 30%);
+    }
+    &__detailsIcon {
+      float: right;
+    }
+  }
+
+  &__mid {
+    color: lighten(color(pure-black), 40%);
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
