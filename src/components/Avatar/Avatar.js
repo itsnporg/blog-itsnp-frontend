@@ -4,9 +4,12 @@ import "./Avatar.scss";
 
 let defaultPlaceholder = "https://i.picsum.photos/id/1081/200/300.jpg?hmac=ntCnXquH7cpEF0vi5yvz1wKAlRyd2EZwZJQbgtfknu8";
 
-//this component expects avatar image from backend
-// if not passed, it displays a default image
-
+/**
+ *
+ * @param {authorImage: src, dottedBorder: boolean, variant: large or small}
+ * @returns Avatar Image
+ * @variants: border none or dotted, small(50px) or large(70px) variant
+ */
 const Avatar = ({ image, dotted, variant }) => {
   return (
     <>

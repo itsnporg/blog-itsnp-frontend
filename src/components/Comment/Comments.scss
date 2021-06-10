@@ -1,26 +1,34 @@
 @import "~styles/main";
 
 .comment {
+  @include font(Poppins);
   margin: 20px auto;
-  width: 70%;
-  // color: lighten(color(pure-black), 40%);
+  width: 60%;
 
+  //shame: this is very hacky method. If found an alternative, please replace
   .avatar {
     position: fixed;
-    // padding: -80px;
     margin: 0px -60px;
   }
 
   &__top {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    // background-color: red;
-    comment__author {
+    margin: 0 0 5px 0;
+    padding: 0;
+    .comment__author {
+      font-weight: 700;
+      font-size: 0.75rem;
       display: inline-block;
+      vertical-align: middle;
+      // margin-right: 200px;   // shame- cant give margin right of text
     }
     em {
+      font-weight: 400;
+      font-size: 0.66rem;
       display: block;
-      color: lighten(color(pure-black), 30%);
+      color: lighten(color(pure-black), 50%);
     }
     &__detailsIcon {
       float: right;
@@ -28,12 +36,39 @@
   }
 
   &__mid {
-    color: lighten(color(pure-black), 40%);
+    font-size: 0.66rem;
+    font-weight: 400;
+    color: lighten(color(pure-black), 20%);
   }
 
   &__bot {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    iconContainer {
+      display: grid;
+      justify-content: center;
+    }
+    .icon {
+      vertical-align: middle;
+    }
+    .author {
+      vertical-align: middle;
+      display: inline-block;
+    }
+    span {
+      box-sizing: border-box;
+      margin: 5px;
+      line-height: 24px;
+    }
+    &__name {
+      font-size: 0.666rem;
+      display: inline-block;
+      color: lighten(color(pure-black), 40%);
+    }
+    .reply {
+      font-size: 0.85rem;
+    }
   }
 }

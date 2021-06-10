@@ -3,11 +3,13 @@ import React from "react";
 import "./Profile.scss";
 import Avatar from "../Avatar/Avatar";
 import { Button } from "../button/Button";
+import { HeartIcon, CommentIcon, FavouriteIcon } from "../Icons";
 
-import { HeartIcon } from "../Icons/HeartIcon";
-import { CommentIcon } from "../Icons/CommentIcon";
-import { FavouriteIcon } from "../Icons/FavouriteIcon";
-
+/**
+ *
+ * @param {author, comment}
+ * @returns Author card with follow and author description
+ */
 export const AuthorProfileCard = ({ image, authorName, authorDesc, followerNum, commentsNum }) => {
   return (
     <>

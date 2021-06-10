@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ *
+ * @returns 3 dots/ details icon component
+ */
+//shame: Naming could be better? Please suggest
 export const ThreeDots = () => (
   <svg
     width='24'
@@ -7,7 +12,7 @@ export const ThreeDots = () => (
     viewBox='0 0 24 24'
     fill='none'
     stroke='black'
-    strokeWidth='2'
+    strokeWidth='1.5'
     strokeLinecap='round'
     strokeLinejoin='round'
     xmlns='http://www.w3.org/2000/svg'

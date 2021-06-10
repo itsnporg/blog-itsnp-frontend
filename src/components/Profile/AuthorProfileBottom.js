@@ -4,9 +4,13 @@ import "./Profile.scss";
 import Avatar from "../Avatar/Avatar";
 import { Button } from "../button/Button";
 
+/**
+ * @params {author}
+ * @returns Avatar and floating right follow botton
+ */
 export const AuthorProfileBottom = ({ image, authorName }) => {
   return (
-    <div className='profile profileBottomWrap'>
+    <div className='profile profileBottom'>
       <Avatar image={image} variant='lg' dotted={true} />
       <div className='authorInfo'>
         <p>Author</p>

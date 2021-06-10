@@ -12,10 +12,9 @@
   }
 }
 
-@mixin font($font-family, $font-weight, $font-style) {
-  font-family: $font-family;
+@mixin font($font-family: "Inter", $font-style: normal, $font-size: 24px, $font-weight: normal) {
+  font: $font-style $font-size $font-family;
   font-weight: $font-weight;
-  font-style: $font-style;
 }
 
 @mixin hover {
@@ -36,13 +35,6 @@
   @media only screen and (max-width: $xl) {
     @content;
   }
-}
-
-@mixin profile__title {
-  margin: auto 20px auto 0px;
-  color: color(pure-black);
-  text-transform: capitalize;
-  font-size: 1.125rem;
 }
 
 @mixin avatar($size, $border) {

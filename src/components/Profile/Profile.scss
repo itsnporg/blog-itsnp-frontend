@@ -7,18 +7,21 @@
     margin: auto 2px;
   }
   .profile__title {
-    @include profile__title;
+    margin: auto 20px auto 0px;
+    color: color(pure-black);
+    text-transform: capitalize;
+    font-size: 1.125rem;
   }
 }
 
-.profileTopWrap {
+.profileTop {
   margin: 10px 20px;
   width: 100%;
   display: flex;
   align-items: row;
 }
 
-.profileBottomWrap {
+.profileBottom {
   display: flex;
   align-items: stretch;
   .authorInfo {

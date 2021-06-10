@@ -2,12 +2,16 @@ import React from "react";
 
 import "./Comments.scss";
 import Avatar from "components/Avatar/Avatar";
-import { HeartIcon } from "components/Icons/HeartIcon";
-import { VerifiedIcon } from "components/Icons/VerifiedIcon";
-import { ThreeDots } from "components/Icons/ThreeDots";
-import { DetailIcon } from "components/Icons/DetailIcon";
+import { HeartIcon, VerifiedIcon, ThreeDots, ReplyIcon } from "components/Icons";
 
-export const Comment = ({ authorName, time, followerNum, authorDetails }) => {
+/**
+ * This renders Comment component
+ * @param {author, comment} objects
+ * @returns Comment object
+ */
+export const Comment = ({ author = { authorName: "Xettri Aleen" }, comment = { time: 5 } }) => {
+  const { authorName } = author;
+  const { time, contents } = comment;
   return (
     <div className='comment'>
       <div className='avatar'>
@@ -15,10 +19,12 @@ export const Comment = ({ authorName, time, followerNum, authorDetails }) => {
       </div>
 
       <div className='comment__top'>
-        <div className='comment__author'>
-          {authorName || "Xettri Aleen"}
+        <div>
+          <div className='comment__author'>
+            {authorName}
+            <em>{time} min ago</em>
+          </div>
           <VerifiedIcon />
-          <em>{time || "21  min ago"}</em>
         </div>
         <div className='comment__detailsIcon'>
           <ThreeDots />
@@ -27,21 +33,28 @@ export const Comment = ({ authorName, time, followerNum, authorDetails }) => {
 
       <div className='comment__mid'>
         <p>
-          Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn’t mean
+          {comment.contents ||
+            `Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn’t mean
           you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift. Whether a
           funny quote from a famous celebrity or an encouraging message about giving it your best from a successful
           business person, we can all use a little motivation and inspiration these days via a life quote.
+          `}
         </p>
       </div>
 
       <div className='comment__bot'>
         <div>
           <HeartIcon />
-          {followerNum || 30}
-          {authorDetails || "Subedi bibek, BOT, Awebisam"}
+          <div className='author'>
+            <span>{author.followerNum || 0}</span>
+            {/* Shame: Cant think of better name- comment list refers to people who have commented */}
+            <div className='comment__bot__name'>
+              {comment.list || "Subedi bibek, BOT, Awebisam"} and {205} others
+            </div>
+          </div>
         </div>
-        <div>
-          <DetailIcon />
+        <div className='reply'>
+          <ReplyIcon />
           Reply
         </div>
       </div>
