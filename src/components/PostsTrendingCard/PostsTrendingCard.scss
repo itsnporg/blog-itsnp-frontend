@@ -1,23 +1,21 @@
-@import '~styles/main';
+@import "~styles/main";
 
-
-.postsTrendingCard{
+.postsTrendingCard {
   @include flex-item-center(row);
   width: 594px;
 
-  &__img {
+  @include e(img) {
     height: 141px;
-}
-
-  &__content {
+  }
+  @include e(content) {
     margin-left: 2rem;
+
     h1 {
-      @include font-heading();
+      @include font-weight-family("Poppins", 700, 32px);
     }
     h3 {
-      @include font-medium();
+      @include font-weight-family("Poppins", 500, 16px);
       margin-top: 10px;
-      font-size: 16px;
       padding-right: 1.6rem;
       color: rgba(0, 0, 0, 0.6);
     }

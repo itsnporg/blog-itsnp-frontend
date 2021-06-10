@@ -1,3 +1,3 @@
-import allImage from "./Image";
+import AllImage from "./Image";
 
-export { allImage };
+export default AllImage;

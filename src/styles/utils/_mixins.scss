@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 @mixin e($element) {
   &__#{$element} {
@@ -32,26 +32,15 @@
   }
 }
 
-
-@mixin flex-item-center($direction){
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:$direction;
+@mixin flex-item-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
-@mixin font-heading() {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-}
-@mixin font-semiBold() {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 28px;
-}
-@mixin font-medium() {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
+@mixin font-weight-family($family, $weight, $size) {
+  font-family: $family, "sans-serif";
+  font-weight: $weight;
+  font-size: $size;
 }

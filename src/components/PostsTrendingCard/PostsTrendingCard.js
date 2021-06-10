@@ -1,14 +1,14 @@
 import React from "react";
 
-import { allImage } from "../../constants";
+import AllImage from "../../constants";
 import "./PostsTrendingCard.scss";
 
-const PostsTrendingCard = ({heading, content}) => {
+const PostsTrendingCard = ({ heading, content }) => {
   return (
     <div className="postsTrendingCard">
       <div>
         <img
-          src={allImage.momo}
+          src={AllImage.momo}
           alt="momo"
           className="postsTrendingCard__img"
         />
