@@ -1,7 +1,9 @@
 @import "~styles/main";
 
 .postsTrendingCard {
-  @include flex-item-center(row);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 594px;
 
   @include e(img) {
@@ -11,10 +13,10 @@
     margin-left: 2rem;
 
     h1 {
-      @include font-weight-family("Poppins", 700, 32px);
+      @include font("Poppins", 700, 32px);
     }
     h3 {
-      @include font-weight-family("Poppins", 500, 16px);
+      @include font("Poppins", 500, 16px);
       margin-top: 10px;
       padding-right: 1.6rem;
       color: rgba(0, 0, 0, 0.6);

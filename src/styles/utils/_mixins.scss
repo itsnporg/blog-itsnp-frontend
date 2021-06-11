@@ -32,15 +32,8 @@
   }
 }
 
-@mixin flex-item-center($direction) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
-}
-
-@mixin font-weight-family($family, $weight, $size) {
-  font-family: $family, "sans-serif";
+@mixin font($family, $weight, $size) {
+  font-family: $family;
   font-weight: $weight;
   font-size: $size;
 }
