@@ -10,7 +10,7 @@ export default (props) => {
     <div className='HomePage'>
       <AuthorProfileTop authorName='Aleen Xetri' followerNum='25' />
       <AuthorProfileBottom authorName='Aleen Xetri' image={"https://picsum.photos/200"} />
-      <AuthorProfileCard authorName='Aleen Xetri' followerNum='1.2' commentsNum='50' />
+      <AuthorProfileCard authorName='Aleen Xetri' followerNum='1.2k' commentsNum='50' />
       <Comment />
     </div>
   );

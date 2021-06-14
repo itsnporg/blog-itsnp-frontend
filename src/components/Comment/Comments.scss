@@ -1,11 +1,10 @@
 @import "~styles/main";
 
 .comment {
-  @include font(Poppins);
+  @include font();
   margin: 20px auto;
   width: 60%;
 
-  //shame: this is very hacky method. If found an alternative, please replace
   .avatar {
     position: fixed;
     margin: 0px -60px;
@@ -19,10 +18,9 @@
     padding: 0;
     .comment__author {
       font-weight: 700;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       display: inline-block;
       vertical-align: middle;
-      // margin-right: 200px;   // shame- cant give margin right of text
     }
     em {
       font-weight: 400;
@@ -36,16 +34,16 @@
   }
 
   &__mid {
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     font-weight: 400;
-    color: lighten(color(pure-black), 20%);
+    color: lighten(color(pure-black), 10%);
   }
 
   &__bot {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 0.85rem;
     iconContainer {
       display: grid;
       justify-content: center;
@@ -54,21 +52,18 @@
       vertical-align: middle;
     }
     .author {
-      vertical-align: middle;
+      margin: auto 2px;
       display: inline-block;
+      vertical-align: middle;
     }
     span {
-      box-sizing: border-box;
-      margin: 5px;
+      margin-right: 5px;
       line-height: 24px;
     }
     &__name {
-      font-size: 0.666rem;
+      font-size: 0.75rem;
       display: inline-block;
       color: lighten(color(pure-black), 40%);
-    }
-    .reply {
-      font-size: 0.85rem;
     }
   }
 }

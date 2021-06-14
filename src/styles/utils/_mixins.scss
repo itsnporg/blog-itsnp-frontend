@@ -12,7 +12,7 @@
   }
 }
 
-@mixin font($font-family: "Inter", $font-style: normal, $font-size: 24px, $font-weight: normal) {
+@mixin font($font-family: "Poppins", $font-style: normal, $font-size: 24px, $font-weight: normal) {
   font: $font-style $font-size $font-family;
   font-weight: $font-weight;
 }
@@ -34,16 +34,5 @@
 @mixin tablet {
   @media only screen and (max-width: $xl) {
     @content;
-  }
-}
-
-@mixin avatar($size, $border) {
-  border-radius: 50%;
-  margin: 0px 0px;
-  height: $size;
-  width: $size;
-
-  @if $border {
-    border: 2px dashed black;
   }
 }

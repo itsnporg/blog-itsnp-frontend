@@ -2,7 +2,7 @@
 
 //global styles across all profile elements
 .profile {
-  font-family: Inter;
+  @include font();
   .button {
     margin: auto 2px;
   }
@@ -18,14 +18,19 @@
   margin: 10px 20px;
   width: 100%;
   display: flex;
-  align-items: row;
+  align-items: center;
 }
 
 .profileBottom {
   display: flex;
   align-items: stretch;
   .authorInfo {
-    color: color(text-light);
+    margin: auto 5px;
+    vertical-align: middle;
+    p {
+      color: lighten(color(pure-black), 30);
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -36,16 +41,19 @@
     justify-content: space-between;
   }
   .desc {
-    color: color(text-light);
+    font-size: 0.6rem;
+    color: lighten(color(pure-black), 30);
   }
   .iconContainer {
+    font-size: 0.7rem;
     display: flex;
     justify-content: space-between;
     margin: 2px 4px;
-    color: color(light);
-    .heart {
+    .icon {
       display: flex;
       span {
+        vertical-align: middle;
+        margin-top: 4px;
         margin-left: 2px;
       }
     }

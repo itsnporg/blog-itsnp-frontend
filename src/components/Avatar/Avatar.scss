@@ -1,17 +1,25 @@
 @import "~styles/main";
 
+.small {
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+.large {
+  @extend .small;
+  img {
+    height: 70px;
+    width: 70px;
+  }
+}
 .dotted {
+  @extend .large;
   img {
-    @include avatar(70px, true);
-  }
-}
-.sm {
-  img {
-    @include avatar(50px, false);
-  }
-}
-.lg {
-  img {
-    @include avatar(70px, false);
+    padding: 2px;
+    height: 62px;
+    width: 62px;
+    border: 2px dashed black;
   }
 }
