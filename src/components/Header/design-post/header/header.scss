@@ -1,0 +1,36 @@
+.header_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  .header_right {
+    .right_icons {
+      display: flex;
+      gap: 20px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .header_left {
+    .left_titles {
+      display: flex;
+      h6 {
+        font-size: 10px;
+        color: gray;
+        font-weight: 400;
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+      .vertical_line {
+        margin-top: 23px;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid gray;
+        height: 12px;
+      }
+    }
+  }
+}
