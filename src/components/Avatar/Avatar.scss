@@ -1,25 +1,28 @@
 @import "~styles/main";
 
-.small {
-  img {
+.avatar {
+  &__small {
     width: 50px;
     height: 50px;
     border-radius: 50%;
   }
-}
-.large {
-  @extend .small;
-  img {
+
+  &__large {
+    @extend .avatar__small;
     height: 70px;
     width: 70px;
   }
-}
-.dotted {
-  @extend .large;
-  img {
+
+  &__dashed {
     padding: 2px;
     height: 62px;
     width: 62px;
     border: 2px dashed black;
+    border-radius: 50%;
+  }
+
+  &__dotted {
+    @extend .avatar__small;
+    border: 2px dotted black;
   }
 }

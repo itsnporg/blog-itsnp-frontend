@@ -4,8 +4,7 @@ import React from "react";
  *
  * @returns 3 dots/ details icon component
  */
-//shame: Naming could be better? Please suggest
-export const ThreeDots = () => (
+export const DetailsIcon = () => (
   <svg
     width='24'
     height='24'

@@ -1,3 +1,3 @@
-export { AuthorProfileTop } from "./AuthorProfileTop";
-export { AuthorProfileBottom } from "./AuthorProfileBottom";
-export { AuthorProfileCard } from "./AuthorProfileCard";
+export { AuthorFollow } from "./AuthorFollow";
+export { AuthorProfile } from "./AuthorProfile";
+export { ProfileCard } from "./ProfileCard";

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Avatar } from "../Avatar";
-import { HeartIcon, VerifiedIcon, ThreeDots, ReplyIcon } from "components/Icons";
+import { HeartIcon, VerifiedIcon, DetailsIcon, ReplyIcon } from "components/Icons";
 
 import "./Comments.scss";
 
@@ -24,11 +24,11 @@ export const Comment = ({
 
   return (
     <div className='comment'>
-      <div className='avatar'>
+      <div className='comment__avatar'>
         <Avatar variant='small' />
       </div>
 
-      <div className='comment__top'>
+      <div className='comment__head'>
         <div>
           <div className='comment__author'>
             {authorName}
@@ -37,28 +37,28 @@ export const Comment = ({
           <VerifiedIcon />
         </div>
 
-        <div className='comment__detailsIcon'>
-          <ThreeDots />
+        <div>
+          <DetailsIcon />
         </div>
       </div>
 
-      <div className='comment__mid'>
+      <div className='comment__contents'>
         <p>{contents}</p>
       </div>
 
       <div className='comment__bot'>
         <div>
           <HeartIcon />
-          <div className='author'>
+          <div className='comment__bot__nameList'>
             <span>{comment.list.length}</span>
             {/* WIP: Comment list refers to people who have commented. Also logic to implement a, b c and 20 others- unclear: Have to communicate with backend */}
-            <div className='comment__bot__name'>
+            <div className='comment__bot__names'>
               {comment.list.map((name) => `${name}, `)} {`and ${comment.list.length - 3} others`}
             </div>
           </div>
         </div>
 
-        <div className='reply'>
+        <div className='comment__reply'>
           <ReplyIcon />
           Reply
         </div>

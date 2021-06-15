@@ -1,64 +1,73 @@
 @import "~styles/main";
 
-//global styles across all profile elements
-.profile {
+//global styles for all profile elements
+%profile {
   @include font();
+  display: flex;
+  align-items: center;
+  width: 100%;
   .button {
     margin: auto 2px;
   }
-  .profile__title {
-    margin: auto 20px auto 0px;
+  .author__title {
+    margin: auto;
     color: color(pure-black);
     text-transform: capitalize;
     font-size: 1.125rem;
   }
 }
 
-.profileTop {
-  margin: 10px 20px;
-  width: 100%;
-  display: flex;
-  align-items: center;
+.authorFollow {
+  @extend %profile;
+  .author__title {
+    margin: auto 20px auto 20px;
+  }
 }
 
-.profileBottom {
-  display: flex;
-  align-items: stretch;
-  .authorInfo {
-    margin: auto 5px;
-    vertical-align: middle;
+.author__profile {
+  @extend %profile;
+  &__info {
+    margin: auto 25px;
     p {
-      color: lighten(color(pure-black), 30);
+      color: lighten(color(pure-black), 50);
       font-size: 0.9rem;
     }
   }
 }
 
-.card {
-  width: 100%;
-  .first {
+.profileCard {
+  @extend %profile;
+  width: 17rem;
+  flex-direction: column;
+  align-items: stretch;
+
+  &__top {
+    //button width needs to be adjusted
     display: flex;
     justify-content: space-between;
   }
-  .desc {
-    font-size: 0.6rem;
-    color: lighten(color(pure-black), 30);
+
+  &__mid {
+    .author__title {
+      margin: 0px;
+    }
+    &__desc {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: lighten(color(pure-black), 60);
+    }
   }
-  .iconContainer {
+
+  &__bot {
+    display: flex;
+    justify-content: space-between;
     font-size: 0.7rem;
-    display: flex;
-    justify-content: space-between;
-    margin: 2px 4px;
-    .icon {
+    .iconContainer {
       display: flex;
       span {
-        vertical-align: middle;
         margin-top: 4px;
         margin-left: 2px;
       }
-    }
-    .comment {
-      display: flex;
     }
   }
 }

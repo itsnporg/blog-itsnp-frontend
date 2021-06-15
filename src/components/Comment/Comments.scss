@@ -5,12 +5,12 @@
   margin: 20px auto;
   width: 60%;
 
-  .avatar {
-    position: fixed;
+  &__avatar {
+    position: absolute;
     margin: 0px -60px;
   }
 
-  &__top {
+  &__head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,12 +28,9 @@
       display: block;
       color: lighten(color(pure-black), 50%);
     }
-    &__detailsIcon {
-      float: right;
-    }
   }
 
-  &__mid {
+  &__contents {
     font-size: 0.75rem;
     font-weight: 400;
     color: lighten(color(pure-black), 10%);
@@ -44,23 +41,12 @@
     align-items: center;
     justify-content: space-between;
     font-size: 0.85rem;
-    iconContainer {
-      display: grid;
-      justify-content: center;
-    }
-    .icon {
-      vertical-align: middle;
-    }
-    .author {
+    &__nameList {
       margin: auto 2px;
       display: inline-block;
       vertical-align: middle;
     }
-    span {
-      margin-right: 5px;
-      line-height: 24px;
-    }
-    &__name {
+    &__names {
       font-size: 0.75rem;
       display: inline-block;
       color: lighten(color(pure-black), 40%);

@@ -6,11 +6,10 @@
   height: 100%;
   vertical-align: middle;
 }
+//saperate class for icons that are used inline- they werent being centered. Please comment betterfix
 .icons {
-  display: inline-block;
+  @extend .icon;
   margin: 0;
-  height: 100%;
   position: relative;
-  top: 5px;
-  vertical-align: middle;
+  top: 3px;
 }

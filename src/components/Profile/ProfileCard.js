@@ -8,10 +8,11 @@ import "./Profile.scss";
 
 /**
  * This component returns a card with author profile description
+ * Contains: Author avatar, follow button, author name, author description, number of follower and comments
  * @param {author, comment}
  * @returns Author card with follow button and author description
  */
-export const AuthorProfileCard = ({
+export const ProfileCard = ({
   image,
   authorName = "Rajesh Hamal",
   authorDesc = "This is some placeholder text. This author is the best person alive",
@@ -20,21 +21,23 @@ export const AuthorProfileCard = ({
 }) => {
   return (
     <>
-      <div className='profile card'>
-        <div className='first'>
-          <Avatar image={image} variant='small' />
+      <div className='profileCard'>
+        <div className='profileCard__top'>
+          <Avatar image={image} dotted='2' variant='small' />
           <Button label='Follow' />
         </div>
 
-        <h4 className='profile__title'>{authorName}</h4>
-        <p className='desc'>{authorDesc}</p>
+        <div className='profileCard__mid'>
+          <h4 className='author__title'>{authorName}</h4>
+          <p className='profileCard__mid__desc'>{authorDesc}</p>
+        </div>
 
-        <div className='iconContainer'>
-          <div className='icon'>
+        <div className='profileCard__bot'>
+          <div className='iconContainer'>
             <HeartIcon />
             <span>{followerNum}</span>
           </div>
-          <div className='icon'>
+          <div className='iconContainer'>
             <CommentIcon />
             <span>{commentsNum}</span>
           </div>
