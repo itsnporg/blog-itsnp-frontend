@@ -6,13 +6,23 @@
   align-items: center;
   .footer_right {
     .footer_icons {
-      display: flex;
-      gap: 15px;
+      .img {
+        display: flex;
+        gap: 15px;
+        li {
+          list-style: none;
+        }
+      }
     }
   }
   .footer_left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    .footer_img {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      li {
+        list-style: none;
+      }
+    }
   }
 }

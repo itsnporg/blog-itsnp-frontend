@@ -6,6 +6,7 @@ import linkendin from "../images/linkedin.svg";
 import more from "../images/more-horizontal.svg";
 import save from "../images/save.svg";
 import twitter from "../images/twitter.svg";
+import links from "../images/link.svg";
 import "./footer.scss";
 
 const footer = () => {
@@ -13,30 +14,53 @@ const footer = () => {
     <div className="footer_container">
       <div className="footer_right">
         <div className="footer_icons">
-          <div className="img">
-            <img src={like} alt="like" />
-          </div>
-          <div className="img">
-            <img src={comment} alt="comment" />
-          </div>
-          <div className="img">
-            <img src={save} alt="save" />
-          </div>
-          <div className="img">
-            <img src={more} alt="more" />
-          </div>
+          <ul className="img">
+            <li>
+              <a href="#">
+                <img src={like} alt="like" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={comment} alt="comment" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={save} alt="save" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={more} alt="more" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="footer_left">
-        <div className="footer_img">
-          <img src={facebook} alt="facebook" />
-        </div>
-        <div className="footer_img">
-          <img src={twitter} alt="twitter" />
-        </div>
-        <div className="footer_img">
-          <img src={linkendin} alt="linkendin" />
-        </div>
+        <ul className="footer_img">
+          <li>
+            <a href="#">
+              <img src={links} alt="Links" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={facebook} alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={twitter} alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={linkendin} alt="linkendin" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -6,11 +6,16 @@
   box-sizing: border-box;
   .header_right {
     .right_icons {
-      display: flex;
-      gap: 20px;
-      img {
-        width: 20px;
-        height: 20px;
+      .img {
+        display: flex;
+        gap: 20px;
+        li {
+          list-style: none;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
       }
     }
   }
@@ -23,6 +28,9 @@
         font-weight: 400;
         margin-left: 4px;
         margin-right: 4px;
+        span {
+          margin-right: 3px;
+        }
       }
       .vertical_line {
         margin-top: 23px;
