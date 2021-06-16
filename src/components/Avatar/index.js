@@ -15,14 +15,14 @@ export const Avatar = ({ image, dotted, variant }) => {
       <div className='avatar'>
         <img
           src={img}
-          className={`${
+          className={`avatar__img ${
             dotted === "2"
-              ? "avatar__dotted"
+              ? "avatar__img--dotted"
               : dotted
-              ? "avatar__dashed"
+              ? "avatar__img--dashed"
               : variant === "large"
-              ? "avatar__large"
-              : "avatar__small"
+              ? "avatar__img--large"
+              : "avatar__img--small"
           }`}
           alt='AvatarImage'
         />
