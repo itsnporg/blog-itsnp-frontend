@@ -7,6 +7,8 @@ import "./Comments.scss";
 
 /**
  * This renders Comment component
+ * WIP: author and comments object's properties are unknown- so placeholders used for proper display
+ * @use Display comment element
  * @param {author, comment} objects
  * @returns Comment object
  */
@@ -30,10 +32,8 @@ export const Comment = ({
 
       <div className='comment__head'>
         <div>
-          <div className='comment__author'>
-            {authorName}
-            <em>{time} min ago</em>
-          </div>
+          <div className='comment____head__author'>{authorName}</div>
+          <em className='comment__head__timeAgo'>{time} min ago</em>
           <VerifiedIcon />
         </div>
 

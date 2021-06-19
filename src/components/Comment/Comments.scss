@@ -1,28 +1,30 @@
 @import "~styles/main";
 
+// WIP: px and rems are used. Will make consistent after textdefault size/properties are fixed(agreed upon)
 .comment {
   @include font();
   margin: 20px auto;
   width: 60%;
 
-  &__avatar {
+  @include e(avatar) {
     position: absolute;
     margin: 0px -60px;
   }
 
-  &__head {
+  @include e(head) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 0 5px 0;
     padding: 0;
-    .comment__author {
+
+    @include e(author) {
       font-weight: 700;
       font-size: 0.85rem;
       display: inline-block;
       vertical-align: middle;
     }
-    em {
+    @include e(timeAgo) {
       font-weight: 400;
       font-size: 0.66rem;
       display: block;
@@ -30,23 +32,25 @@
     }
   }
 
-  &__contents {
+  @include e(contents) {
     font-size: 0.75rem;
     font-weight: 400;
     color: lighten(color(pure-black), 10%);
   }
 
-  &__bot {
+  @include e(bot) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 0.85rem;
-    &__nameList {
+
+    @include e(nameList) {
       margin: auto 2px;
       display: inline-block;
       vertical-align: middle;
     }
-    &__names {
+
+    @include e(names) {
       font-size: 0.75rem;
       display: inline-block;
       color: lighten(color(pure-black), 40%);

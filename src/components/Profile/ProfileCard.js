@@ -9,6 +9,7 @@ import "./Profile.scss";
 /**
  * This component returns a card with author profile description
  * Contains: Author avatar, follow button, author name, author description, number of follower and comments
+ * @use Side of blog post
  * @param {author, comment}
  * @returns Author card with follow button and author description
  */
@@ -23,7 +24,7 @@ export const ProfileCard = ({
     <>
       <div className='profileCard'>
         <div className='profileCard__top'>
-          <Avatar image={image} dotted='2' variant='small' />
+          <Avatar image={image} border='dotted' variant='small' />
           <Button label='Follow' />
         </div>
 

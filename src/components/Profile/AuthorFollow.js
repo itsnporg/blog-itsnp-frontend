@@ -7,6 +7,7 @@ import "./Profile.scss";
 
 /**
  * This components returns author avatar, name and a follow button with number of followers
+ * @use Top of blog for introduction
  * @param {author}
  * @returns Avatar with dotted border and follow button beside
  */
