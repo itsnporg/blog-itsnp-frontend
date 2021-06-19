@@ -2,7 +2,17 @@ import React from "react";
 import PostsTrendingCard from "components/PostsTrendingCard/PostsTrendingCard";
 import BlogPostCard from "components/BlogPostCard/BlogPostCard";
 import "./Home.scss";
-import { AllImage } from "../../constants/index";
+
+import MomoImage from "../../resources/images/global/momo.png";
+import SaladImage from "../../resources/images/global/salad.png";
+import UserAvatar from "../../resources/images/global/user.png";
+import LoveIcon from "../../resources/images/icons/love.png";
+import ItsnpImage from "../../resources/images/global/itsnp.png";
+import SandwichImage from "../../resources/images/global/sandwich.png";
+
+import ChatIcon from "../../resources/images/icons/chat.png";
+import BookmarkIcon from "../../resources/images/icons/bookmark.png";
+
 import SmallCardBlogPost from "components/SmallCardBlogPost";
 import MediumCardBlogPost from "components/PostMediumBlogPost";
 import JoinMadhyamCard from "components/JoinMadhyamCard";
@@ -10,7 +20,7 @@ export default (props) => {
   return (
     <div className="HomePage">
       <PostsTrendingCard
-        image={AllImage.momo}
+        image={MomoImage}
         caption="momo"
         heading="How momo helps to think like bill gates"
         content="I used to have 5 plates momo per day, Which helps me to build
@@ -18,25 +28,25 @@ export default (props) => {
       />
 
       <SmallCardBlogPost
-        image={AllImage.salad}
+        image={SaladImage}
         imageTitle={"salad"}
-        user={AllImage.user}
-        love={AllImage.love}
-        chat={AllImage.chat}
-        bookmark={AllImage.bookmark}
+        user={UserAvatar}
+        love={LoveIcon}
+        chat={ChatIcon}
+        bookmark={BookmarkIcon}
         content="This is butter This is butterThis is butterThis is butterThis is butterThis is butter This is butterThis is butter"
       />
       <BlogPostCard
-        image={AllImage.itsnp}
-        user={AllImage.user}
+        image={ItsnpImage}
+        user={UserAvatar}
         heading="The Front-End Web Developer Roadmap for 2021"
         content="You’ve read all your free member-only stories. Become a member to get unlimitedYou’ve read all your free member-only stories. Become a member to get You’ve read all your free ..."
       />
 
       <MediumCardBlogPost
-        image={AllImage.sandwich}
+        image={SandwichImage}
         imageTitle={"sandwich"}
-        user={AllImage.user}
+        user={UserAvatar}
         content={
           "This is butter This is butterThis is butterThis is butterThis is butterThis is butter This is butterThis is butterThis is butterThis is butterThis is butter "
         }

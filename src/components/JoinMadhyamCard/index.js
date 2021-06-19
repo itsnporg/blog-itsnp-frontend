@@ -1,6 +1,5 @@
 import React from "react";
 
-import AllImage from "../../constants";
 import "./style.scss";
 
 import LargePink from "components/Circles/LargePink";

@@ -1,9 +1,9 @@
 import React from "react";
 import "./BlogPostCard.scss";
 
-import { Love } from "components/Icons/Love";
+import { LoveIcon } from "components/Icons/Love";
 import { ChatIcon } from "components/Icons/ChatIcon";
-import { BookMark } from "components/Icons/BookMark";
+import { BookMarkIcon } from "components/Icons/BookMark";
 const BlogPostCard = ({
   heading,
   content,
@@ -28,9 +28,9 @@ const BlogPostCard = ({
       </div>
       <div className="blogPostCard__icons">
         <div className="blogPostCard__icon">
-          <Love />
+          <LoveIcon />
           <ChatIcon />
-          <BookMark />
+          <BookMarkIcon />
         </div>
         <div className="blogPostCard__circle">
           <span>{userName}</span>
