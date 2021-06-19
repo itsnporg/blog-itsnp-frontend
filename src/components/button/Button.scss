@@ -1,0 +1,20 @@
+@import '~styles/main';
+
+.button {
+  //shame styling *don't do this
+  width: fit-content;
+
+  // @include font(inter,500,italic);
+  font-family: inter;
+
+  background-color: color(pure-black);
+
+  padding: 8px 18px;
+
+  border-radius: 5px;
+
+  @include e(label) {
+    color: white;
+    text-transform: uppercase;
+  }
+}
