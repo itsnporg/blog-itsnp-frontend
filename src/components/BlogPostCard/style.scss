@@ -7,20 +7,18 @@
   align-items: center;
   flex-direction: column;
   width: 213px;
-  height: 276px;
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 12px;
 
   @include e(image) {
-    height: 104px;
-
+    height: 95px;
     img {
       height: 100%;
     }
   }
   @include e(content) {
-    padding: 1rem 1rem;
+    padding: 16px;
 
     h2 {
       @include font("Poppins", 600, 13px);
@@ -29,17 +27,15 @@
     }
     h3 {
       @include font("Open Sans", 500, 8px);
-      margin-top: 0.8rem;
+      padding-top: 0.8rem;
       line-height: 12px;
       height: 44px;
       color: #636e72;
-      margin: 4px 0px;
     }
     @include m(readmore) {
       display: flex;
-
       align-items: center;
-
+      margin-top: 4px;
       .para1 {
         color: #2d3436;
         @include font("Roboto", 500, 9px);
@@ -65,22 +61,6 @@
     align-items: center;
     width: 28%;
     padding-left: 12px;
-
-    @include m(love) {
-      width: 12.5px;
-      height: 11.26px;
-
-      padding-left: 13.25px;
-    }
-
-    @include m(chat) {
-      width: 11.25px;
-      height: 11.25px;
-    }
-    @include m(bookmark) {
-      width: 11.37px;
-      height: 15px;
-    }
   }
   @include e(circle) {
     display: flex;

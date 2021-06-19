@@ -1,16 +1,23 @@
 import React from "react";
-import PostsTrendingCard from "components/PostsTrendingCard/PostsTrendingCard";
-import BlogPostCard from "components/BlogPostCard/BlogPostCard";
+
 import "./Home.scss";
-import { AllImage } from "../../constants/index";
-import SmallCardBlogPost from "components/SmallCardBlogPost";
 import MediumCardBlogPost from "components/PostMediumBlogPost";
 import JoinMadhyamCard from "components/JoinMadhyamCard";
+import SmallCardBlogPost from "components/SmallCardBlogPost";
+import PostsTrendingCard from "components/PostsTrendingCard";
+import BlogPostCard from "components/BlogPostCard";
+
+import MOMO from "../../resources/images/global/momo.png";
+import SALAD from "../../resources/images/global/salad.png";
+import ITSNP from "../../resources/images/global/itsnp.png";
+import USER from "../../resources/images/global/user.png";
+import SANDWICH from "../../resources/images/global/sandwich.png";
+
 export default (props) => {
   return (
-    <div className="HomePage">
+    <div className="homePage">
       <PostsTrendingCard
-        image={AllImage.momo}
+        image={MOMO}
         caption="momo"
         heading="How momo helps to think like bill gates"
         content="I used to have 5 plates momo per day, Which helps me to build
@@ -18,25 +25,22 @@ export default (props) => {
       />
 
       <SmallCardBlogPost
-        image={AllImage.salad}
+        user={USER}
+        image={SALAD}
         imageTitle={"salad"}
-        user={AllImage.user}
-        love={AllImage.love}
-        chat={AllImage.chat}
-        bookmark={AllImage.bookmark}
         content="This is butter This is butterThis is butterThis is butterThis is butterThis is butter This is butterThis is butter"
       />
       <BlogPostCard
-        image={AllImage.itsnp}
-        user={AllImage.user}
+        image={ITSNP}
+        user={USER}
         heading="The Front-End Web Developer Roadmap for 2021"
         content="You’ve read all your free member-only stories. Become a member to get unlimitedYou’ve read all your free member-only stories. Become a member to get You’ve read all your free ..."
       />
 
       <MediumCardBlogPost
-        image={AllImage.sandwich}
+        image={SANDWICH}
         imageTitle={"sandwich"}
-        user={AllImage.user}
+        user={USER}
         content={
           "This is butter This is butterThis is butterThis is butterThis is butterThis is butter This is butterThis is butterThis is butterThis is butterThis is butter "
         }

@@ -1,9 +1,8 @@
 import React from "react";
 
-import "./PostsTrendingCard.scss";
+import "./style.scss";
 
 const PostsTrendingCard = ({ image, caption, heading, content }) => {
-  console.log("image", image);
   return (
     <div className="postsTrendingCard">
       <div>
