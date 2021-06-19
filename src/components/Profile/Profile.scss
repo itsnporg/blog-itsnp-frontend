@@ -29,7 +29,7 @@
   &__info {
     margin: auto 25px;
     p {
-      color: lighten(color(pure-black), 50);
+      color: color(text-opaq50);
       font-size: 0.9rem;
     }
   }
@@ -53,7 +53,7 @@
     @include e(desc) {
       font-size: 0.75rem;
       font-weight: 400;
-      color: lighten(color(pure-black), 60);
+      color: color(text-opaq60);
     }
   }
 

@@ -28,14 +28,14 @@
       font-weight: 400;
       font-size: 0.66rem;
       display: block;
-      color: lighten(color(pure-black), 50%);
+      color: color(text-opaq50);
     }
   }
 
   @include e(contents) {
     font-size: 0.75rem;
     font-weight: 400;
-    color: lighten(color(pure-black), 10%);
+    color: color(text-opaq70);
   }
 
   @include e(bot) {
@@ -53,7 +53,7 @@
     @include e(names) {
       font-size: 0.75rem;
       display: inline-block;
-      color: lighten(color(pure-black), 40%);
+      color: color(text-opaq40);
     }
   }
 }

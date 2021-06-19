@@ -4,6 +4,11 @@ $colors: (
   tertiary-grey: #f8f8f8,
   primary-white: #ffffff,
   pure-black: #000000,
+  text-opaq10: rgba(0, 0, 0, 0.1),
+  text-opaq40: rgba(0, 0, 0, 0.4),
+  text-opaq50: rgba(0, 0, 0, 0.5),
+  text-opaq60: rgba(0, 0, 0, 0.6),
+  text-opaq70: rgba(0, 0, 0, 0.7),
 );
 
 @function color($color) {
