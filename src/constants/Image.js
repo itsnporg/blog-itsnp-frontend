@@ -4,7 +4,7 @@ import momo from "../resources/images/global/momo.png";
 import salad from "../resources/images/global/salad.png";
 import user from "../resources/images/global/user.png";
 import sandwich from "../resources/images/global/sandwich.png";
-
+import itsnp from "../resources/images/global/itsnp.png";
 /* icons */
 
 import bookmark from "../resources/images/icons/bookmark.png";
@@ -15,6 +15,7 @@ export default {
   momo,
   salad,
   user,
+  itsnp,
   sandwich,
   bookmark,
   chat,

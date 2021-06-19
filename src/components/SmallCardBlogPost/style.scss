@@ -1,0 +1,40 @@
+@import "~styles/main";
+
+.smallCardBlogPost {
+  width: 370px;
+  @include e(container) {
+    display: flex;
+
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  @include e(img) {
+    img {
+      height: 83px;
+      width: 87px;
+    }
+  }
+  @include e(content) {
+    p {
+      padding-top: 10px;
+      font-size: 16px;
+      line-height: 22px;
+      font-family: "Poppins";
+    }
+  }
+  @include e(user) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include m(img) {
+      height: 47px;
+      width: 47px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "~styles/main";
+
+.joinMadhyamCard {
+  height: 328px;
+  width: 415px;
+  background-color: #2d3436;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins";
+  color: color(primary-white);
+  @include e(container) {
+    padding: 40px 0px 23px 33px;
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    h1 {
+      letter-spacing: 0.6px;
+      font-size: 33px;
+      font-weight: bolder;
+      line-height: 51px;
+      letter-spacing: 0.9px;
+    }
+  }
+
+  @include e(button) {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    div {
+      width: 356px;
+      height: 66px;
+      background-color: #55efc4;
+      display: flex;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      font-family: "Roboto";
+
+      font-size: 28px;
+      line-height: 32px;
+      color: color(primary-white);
+      z-index: 3;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #51d3ae;
+      }
+    }
+  }
+
+  .circle {
+    position: absolute;
+
+    @include e(largePink) {
+      left: 12px;
+      top: -40px;
+    }
+
+    @include e(yellow) {
+      left: 59px;
+      bottom: 21px;
+    }
+
+    @include e(smallPink) {
+      right: 46px;
+      top: 26px;
+    }
+
+    @include e(purple) {
+      bottom: -52px;
+      right: 19px;
+    }
+  }
+}

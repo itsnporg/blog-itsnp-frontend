@@ -1,0 +1,40 @@
+@import "~styles/main";
+
+.mediumCardBlogPost {
+  width: 391px;
+  padding: 20px 0px;
+  @include e(container) {
+    @include m(img) {
+      width: 100%;
+      height: 164px;
+      img {
+        width: 100%;
+      }
+    }
+
+    @include m(content) {
+      p {
+        padding: 22px 0px;
+        line-height: 24px;
+        font-family: "Poppins";
+        font-size: 16px;
+      }
+    }
+  }
+  @include e(user) {
+    padding-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include m(img) {
+      height: 60px;
+      width: 60px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
