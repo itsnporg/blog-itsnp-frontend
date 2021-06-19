@@ -5,7 +5,7 @@ import "./Home.scss";
 import { AllImage } from "../../constants/index";
 import SmallCardBlogPost from "components/SmallCardBlogPost";
 import MediumCardBlogPost from "components/PostMediumBlogPost";
-
+import JoinMadhyamCard from "components/JoinMadhyamCard";
 export default (props) => {
   return (
     <div className="HomePage">
@@ -28,9 +28,6 @@ export default (props) => {
       />
       <BlogPostCard
         image={AllImage.itsnp}
-        love={AllImage.love}
-        chat={AllImage.chat}
-        bookmark={AllImage.bookmark}
         user={AllImage.user}
         heading="The Front-End Web Developer Roadmap for 2021"
         content="You’ve read all your free member-only stories. Become a member to get unlimitedYou’ve read all your free member-only stories. Become a member to get You’ve read all your free ..."
@@ -44,6 +41,7 @@ export default (props) => {
           "This is butter This is butterThis is butterThis is butterThis is butterThis is butter This is butterThis is butterThis is butterThis is butterThis is butter "
         }
       />
+      <JoinMadhyamCard />
     </div>
   );
 };

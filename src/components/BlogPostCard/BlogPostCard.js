@@ -1,13 +1,17 @@
 import React from "react";
 import "./BlogPostCard.scss";
+
+import { Love } from "components/Icons/Love";
+import { ChatIcon } from "components/Icons/ChatIcon";
+import { BookMark } from "components/Icons/BookMark";
 const BlogPostCard = ({
   heading,
   content,
   image,
-  love,
-  chat,
   user,
-  bookmark,
+  readMore = "ReadMore",
+  date = "May 17",
+  userName = "XettriAl.",
 }) => {
   return (
     <div className="blogPostCard">
@@ -18,18 +22,18 @@ const BlogPostCard = ({
         <h2>{heading}</h2>
         <h3>{content}</h3>
         <div className="blogPostCard__content--readmore">
-          <span>Readmore</span>
-          <p>May 17</p>
+          <p className="para1">{readMore}</p>
+          <p className="para2">{date}</p>
         </div>
       </div>
       <div className="blogPostCard__icons">
         <div className="blogPostCard__icon">
-          <img src={love} alt="" className="blogPostCard__icon--love" />
-          <img src={chat} alt="" className="blogPostCard__icon--chat" />
-          <img src={bookmark} alt="" className="blogPostCard__icon--bookmark" />
+          <Love />
+          <ChatIcon />
+          <BookMark />
         </div>
         <div className="blogPostCard__circle">
-          <span>XettriAl.</span>
+          <span>{userName}</span>
           <img src={user} alt="" className="blogPostCard__circle--user" />
         </div>
       </div>
