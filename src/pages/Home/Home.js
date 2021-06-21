@@ -18,21 +18,24 @@ export default (props) => {
     <div className="homePage">
       <PostsTrendingCard
         image={MOMO}
-        caption="momo"
+        imageTitle="momo"
         heading="How momo helps to think like bill gates"
         content="I used to have 5 plates momo per day, Which helps me to build
           microsoft. Bill Gates says “Momo helped me to I see the ......"
       />
 
       <SmallCardBlogPost
-        user={USER}
+        authorImg={USER}
         image={SALAD}
         imageTitle={"salad"}
         content="This is butter This is butterThis is butterThis is butterThis is butterThis is butter This is butterThis is butter"
       />
       <BlogPostCard
         image={ITSNP}
-        user={USER}
+        imageTitle="itsnp"
+        authorImg={USER}
+        date="May 17"
+        authorName="XettriAl."
         heading="The Front-End Web Developer Roadmap for 2021"
         content="You’ve read all your free member-only stories. Become a member to get unlimitedYou’ve read all your free member-only stories. Become a member to get You’ve read all your free ..."
       />
@@ -40,7 +43,7 @@ export default (props) => {
       <MediumCardBlogPost
         image={SANDWICH}
         imageTitle={"sandwich"}
-        user={USER}
+        authorImg={USER}
         content={
           "This is butter This is butterThis is butterThis is butterThis is butterThis is butter This is butterThis is butterThis is butterThis is butterThis is butter "
         }

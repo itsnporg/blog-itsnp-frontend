@@ -4,18 +4,20 @@ import "./style.scss";
 import { LoveIcon } from "components/Icons/LoveIcon";
 import { ChatIcon } from "components/Icons/ChatIcon";
 import { BookMarkIcon } from "components/Icons/BookMarkIcon";
+import { Avatar } from "../Avatar";
 const BlogPostCard = ({
   heading,
   content,
   image,
-  user,
+  imageTitle,
+  authorImg,
   date = "May 17",
-  userName = "XettriAl.",
+  authorName = "XettriAl.",
 }) => {
   return (
     <div className="blogPostCard">
       <div className="blogPostCard__image">
-        <img className="blogPostCard__img" src={image} alt="" />
+        <img className="blogPostCard__img" src={image} alt={imageTitle} />
       </div>
       <div className="blogPostCard__content">
         <h2>{heading}</h2>
@@ -32,8 +34,8 @@ const BlogPostCard = ({
           <BookMarkIcon />
         </div>
         <div className="blogPostCard__circle">
-          <span>{userName}</span>
-          <img src={user} alt="" className="blogPostCard__circle--user" />
+          <span>{authorName}</span>
+          <Avatar image={authorImg} variant="xs" />
         </div>
       </div>
     </div>

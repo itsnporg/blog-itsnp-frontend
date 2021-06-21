@@ -2,11 +2,11 @@ import React from "react";
 
 import "./style.scss";
 
-const PostsTrendingCard = ({ image, caption, heading, content }) => {
+const PostsTrendingCard = ({ image, imageTitle, heading, content }) => {
   return (
     <div className="postsTrendingCard">
       <div>
-        <img src={image} alt={caption} className="postsTrendingCard__img" />
+        <img src={image} alt={imageTitle} className="postsTrendingCard__img" />
       </div>
 
       <div className="postsTrendingCard__content">

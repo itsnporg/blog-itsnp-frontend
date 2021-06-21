@@ -26,15 +26,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @include m(img) {
-      height: 60px;
-      width: 60px;
-      overflow: hidden;
-      img {
-        object-fit: cover;
-        width: 100%;
-      }
-    }
   }
 }

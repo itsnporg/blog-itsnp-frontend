@@ -70,12 +70,7 @@
       color: rgba(0, 0, 0, 0.6);
       font-size: 6px;
       line-height: 11px;
-      padding-right: 2px;
-    }
-    @include m(user) {
-      width: 27px;
-      height: 27px;
-      padding-right: 11px;
+      padding-right: 16px;
     }
   }
 }

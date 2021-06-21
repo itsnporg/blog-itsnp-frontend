@@ -2,10 +2,10 @@ import React from "react";
 
 import "./style.scss";
 
-import LargePink from "components/Circles/LargePink";
-import Yellow from "components/Circles/Yellow";
-import SmallPink from "components/Circles/SmallPink";
-import Purple from "components/Circles/Purple";
+import LargePink from "./Circles/LargePink";
+import Yellow from "./Circles/Yellow";
+import SmallPink from "./Circles/SmallPink";
+import Purple from "./Circles/Purple";
 const JoinMadhyamCard = ({
   topic = "Join Mnadhyam!",
   heading = `Learn Share and Innovate :)`,
