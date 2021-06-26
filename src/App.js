@@ -7,9 +7,9 @@ import {Notification}  from "./pages/Home/components/Notification/Notification";
 
 function App() {
   return (
-    <Routes />
+    // <Routes />
     // <Headers/>
-    // <Notification/>
+    <Notification/>
   );
 }
 
