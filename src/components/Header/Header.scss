@@ -1,27 +1,54 @@
-@import '~styles/main';
+@import "~styles/main";
 
 .Header {
-    @include clearFix();
-    background-color: color(primary-blue);
+  background-color: color(tertiary-grey);
+  // background-color: black;
 
-    .Header__Nav {
-        float: left;
-        li {
-            display: inline-block;
-            margin-left: 10px;
-
-            a {
-                display: block;
-                padding: 20px 20px;
-                text-decoration: none;
-                color: color(primary-white);
-                border-bottom: 2px solid transparent;
-
-                &:hover {
-                    border-bottom: 2px solid color(primary-white);
-                }
-            }
-        }
-
+  .Header__Nav {
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0.8rem 0;
+    .Header__Nav--left {
+      font-size: 28px;
+      font-family: Poppins;
+      font-weight: 500;
     }
+    .Header__Nav--right {
+      ul {
+        display: flex;
+      }
+      li {
+        // border: 1px solid blue;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 0.5rem;
+      }
+      li a {
+        text-decoration: none;
+
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .icon {
+          padding: 0 0.5em;
+        }
+        p {
+          font-size: 18px;
+          font-family: Poppins;
+          font-weight: 500;
+        }
+        img{
+            height: 50px;
+            width:50px;
+            border-radius: 50%;
+
+        }
+      }
+    }
+  }
 }

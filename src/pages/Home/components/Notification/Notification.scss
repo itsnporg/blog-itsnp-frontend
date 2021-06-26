@@ -1,0 +1,70 @@
+.notification_container{
+    // border:2px solid red;   
+    width:35vw;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    font-family: "Lato",sans-serif;
+    font-style: regular;
+}
+.arrow_head_container{
+    position: relative;
+    height: 25px;
+}
+.arrow_head{
+    border:2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    height: 45px;
+    width: 45px;
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    left: 40%;
+    top: -60%;
+    transform: rotate(45deg);
+}
+.notification_titles{
+    font-family: Lato;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 1rem;
+    
+    p{
+        font-size: 20px;
+    }
+
+}
+.notifications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 0rem;
+    border-bottom: 2px solid #EEEEEE;
+    
+}
+.profile{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+}
+.notification_value{
+    flex:3;
+}
+
+.dateline{
+    font-size: 20px;
+    padding: 1rem;
+    p{
+        display: inline-block;
+    }
+}
