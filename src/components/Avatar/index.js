@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import "./Avatar.scss";
+import './Avatar.scss'
 
 /**
  * This component returns author profile or avatar image
@@ -10,20 +10,16 @@ import "./Avatar.scss";
  * @param {image, border: 'dotted or dashed', variant: 'large', 'small' or xs}
  */
 export const Avatar = ({ image, border, variant }) => {
-  const img = image || "https://i.picsum.photos/id/1081/200/300.jpg?hmac=ntCnXquH7cpEF0vi5yvz1wKAlRyd2EZwZJQbgtfknu8";
+  const img = image || 'https://i.picsum.photos/id/1081/200/300.jpg?hmac=ntCnXquH7cpEF0vi5yvz1wKAlRyd2EZwZJQbgtfknu8'
   return (
     <>
-      <div className='avatar'>
-        <img
-          src={img}
-          className={`avatar__img ${
-            border === "dotted" ? "avatar__img--dotted" : border === "dashed" ? "avatar__img--dashed" : ""
-          } ${
-            variant === "large" ? "avatar__img--large" : variant === "xs" ? "avatar__img--xs" : "avatar__img--small"
-          }`}
-          alt='Author avatar'
-        />
+      <div
+        className={`avatar  ${
+          variant === 'large' ? 'avatar--large' : variant === 'xs' ? 'avatar--xs' : 'avatar--small'
+        } ${border === 'dotted' ? 'avatar--dotted' : border === 'dashed' ? 'avatar--dashed' : ''}`}
+      >
+        <img src={img} className={`avatar__img `} alt='Author avatar' />
       </div>
     </>
-  );
-};
+  )
+}

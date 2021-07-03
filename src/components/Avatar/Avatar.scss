@@ -1,35 +1,38 @@
-@import "~styles/main";
+@import '~styles/main';
 
-// border-top-style: dotted;    // WIP: add implementation as in https://eutai.netlify.app/
-//WIP: refactor to make a div element responsible for height and width fixing
 .avatar {
+  border: 2px none color(pure-black);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-sizing: border-box;
+
+  @include m(large) {
+    height: 70px;
+    width: 70px;
+  }
+  @include m(small) {
+    width: 50px;
+    height: 50px;
+  }
+  @include m(xs) {
+    height: 30px;
+    width: 30px;
+  }
+  @include m(dashed) {
+    border-style: dashed;
+  }
+  @include m(dotted) {
+    border-style: dotted;
+  }
+
   @include e(img) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #ffffff;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     box-sizing: border-box;
-
-    @include m(small) {
-      width: 50px;
-      height: 50px;
-    }
-    @include m(large) {
-      height: 70px;
-      width: 70px;
-    }
-    @include m(xs) {
-      height: 30px;
-      width: 30px;
-    }
-
-    @include m(dashed) {
-      padding: 2px;
-      height: 70px;
-      width: 70px;
-      border: 2px dashed color(pure-black);
-      border-radius: 50%;
-    }
-    @include m(dotted) {
-      @extend .avatar__img--small;
-      border: 2px dotted color(pure-black);
-    }
   }
 }
