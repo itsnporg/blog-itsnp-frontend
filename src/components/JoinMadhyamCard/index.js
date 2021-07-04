@@ -2,19 +2,24 @@ import React from "react";
 
 import "./style.scss";
 
-import LargePink from "components/Circles/LargePink";
-import Yellow from "components/Circles/Yellow";
-import SmallPink from "components/Circles/SmallPink";
-import Purple from "components/Circles/Purple";
-const JoinMadhyamCard = () => {
+import LargePink from "./Circles/LargePink";
+import Yellow from "./Circles/Yellow";
+import SmallPink from "./Circles/SmallPink";
+import Purple from "./Circles/Purple";
+const JoinMadhyamCard = ({
+  topic = "Join Mnadhyam!",
+  heading = `Learn Share and Innovate :)`,
+  btnTitle = "Get Started",
+  route,
+}) => {
   return (
     <div className="joinMadhyamCard">
       <div className="joinMadhyamCard__container">
-        <h2>Join Madhyam !</h2>
-        <h1>Learn Share and Innovate :{")"}</h1>
+        <h2>{topic}!</h2>
+        <h1>{heading}</h1>
       </div>
-      <div className="joinMadhyamCard__button" onClick={() => {}}>
-        <div>Get Started</div>
+      <div className="joinMadhyamCard__button" onClick={route}>
+        <div>{btnTitle}</div>
       </div>
 
       <div className="circle  circle__largePink">

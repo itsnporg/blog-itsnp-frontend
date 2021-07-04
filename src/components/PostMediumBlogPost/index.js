@@ -1,7 +1,8 @@
 import React from "react";
 
+import { Avatar } from "../Avatar";
 import "./style.scss";
-const MediumCardBlogPost = ({ image, content, user, imageTitle }) => {
+const MediumCardBlogPost = ({ image, content, authorImg, imageTitle }) => {
   return (
     <div className="mediumCardBlogPost">
       <div className="mediumCardBlogPost__container">
@@ -14,9 +15,7 @@ const MediumCardBlogPost = ({ image, content, user, imageTitle }) => {
       </div>
 
       <div className="mediumCardBlogPost__user">
-        <div className="mediumCardBlogPost__user--img">
-          <img src={user} alt="user" />
-        </div>
+        <Avatar image={authorImg} variant="large" />
         <div className="mediumCardBlogPost__user--follow"></div>
       </div>
     </div>
