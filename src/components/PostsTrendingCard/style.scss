@@ -1,0 +1,30 @@
+@import "~styles/main";
+
+.postsTrendingCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 594px;
+
+  @include e(img) {
+    height: 141px;
+  }
+  @include e(content) {
+    margin-left: 2rem;
+
+    h1 {
+      @include font("Poppins", 700, 32px);
+    }
+    h3 {
+      @include font("Poppins", 500, 16px);
+      margin-top: 10px;
+      padding-right: 1.6rem;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    span {
+      color: #005d88;
+      font-weight: bold;
+    }
+    
+  }
+}

@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 @mixin e($element) {
   &__#{$element} {
@@ -30,4 +30,10 @@
   @media only screen and (max-width: $xl) {
     @content;
   }
+}
+
+@mixin font($family, $weight, $size) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
 }
