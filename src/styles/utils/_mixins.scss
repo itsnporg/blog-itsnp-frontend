@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 @mixin e($element) {
   &__#{$element} {
@@ -12,10 +12,9 @@
   }
 }
 
-@mixin font($font-family, $font-weight, $font-style) {
-  font-family: $font-family;
+@mixin font($font-family: "Poppins", $font-style: normal, $font-size: 24px, $font-weight: normal) {
+  font: $font-style $font-size $font-family;
   font-weight: $font-weight;
-  font-style: $font-style;
 }
 
 @mixin hover {

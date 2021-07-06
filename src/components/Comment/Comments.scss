@@ -1,0 +1,59 @@
+@import "~styles/main";
+
+// WIP: px and rems are used. Will make consistent after textdefault size/properties are fixed(agreed upon)
+.comment {
+  @include font();
+  margin: 20px auto;
+  width: 60%;
+
+  @include e(avatar) {
+    position: absolute;
+    margin: 0px -60px;
+  }
+
+  @include e(head) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+    padding: 0;
+
+    @include e(author) {
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @include e(timeAgo) {
+      font-weight: 400;
+      font-size: 0.66rem;
+      display: block;
+      color: color(text-opaq50);
+    }
+  }
+
+  @include e(contents) {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: color(text-opaq70);
+  }
+
+  @include e(bot) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+
+    @include e(nameList) {
+      margin: auto 2px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    @include e(names) {
+      font-size: 0.75rem;
+      display: inline-block;
+      color: color(text-opaq40);
+    }
+  }
+}

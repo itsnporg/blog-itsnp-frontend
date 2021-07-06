@@ -1,0 +1,15 @@
+@import "~styles/main";
+
+.icon {
+  display: inline-block;
+  margin: 0 5px;
+  height: 100%;
+  vertical-align: middle;
+}
+//saperate class for icons that are used inline- they werent being centered. Please comment betterfix
+.icons {
+  @extend .icon;
+  margin: 0;
+  position: relative;
+  top: 3px;
+}

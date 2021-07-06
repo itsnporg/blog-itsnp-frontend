@@ -1,0 +1,72 @@
+@import "~styles/main";
+
+//global styles for all profile elements
+%profile {
+  @include font();
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .button {
+    margin: auto 2px;
+  }
+  .author__title {
+    margin: auto;
+    color: color(pure-black);
+    text-transform: capitalize;
+    font-size: 1.125rem;
+  }
+}
+
+.authorFollow {
+  @extend %profile;
+  .author__title {
+    margin: auto 20px auto 20px;
+  }
+}
+
+.author__profile {
+  @extend %profile;
+  &__info {
+    margin: auto 25px;
+    p {
+      color: color(text-opaq50);
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.profileCard {
+  @extend %profile;
+  width: 17rem;
+  flex-direction: column;
+  align-items: stretch;
+
+  @include e(top) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include e(mid) {
+    .author__title {
+      margin: 0px;
+    }
+    @include e(desc) {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: color(text-opaq60);
+    }
+  }
+
+  @include e(bot) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    .iconContainer {
+      display: flex;
+      span {
+        margin-top: 4px;
+        margin-left: 2px;
+      }
+    }
+  }
+}
